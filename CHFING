@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll unsigned long long int
+int main() 
+{
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll n,k;
+        cin>>n>>k;
+        if(n<k)
+        {
+          ll m=((k)*(k-1))/2;
+          
+          ll o=m%1000000007;
+          cout<<o<<endl;
+        }
+        else
+        {
+        	ll h=(k-1)%1000000007;
+            cout<<h<<endl;
+        }
+    }
+	return 0;
+}
